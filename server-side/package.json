@@ -1,12 +1,16 @@
 {
   "name": "server-side",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple web server",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Vytautas Klimavicius",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0"
+  }
 }
