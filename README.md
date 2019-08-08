@@ -6,6 +6,10 @@ First Phase - Backend:
 
 Second Phase - Frontend:
 
+- Wireframe:
+
+![Wireframe](public/wireframe.png)
+
 1. Design UX/UI.
 2. Display data.
 3. Search Filters.
