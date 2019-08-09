@@ -2,22 +2,21 @@ body {
   background-image: url('../images/background.jpg');
   background-size: 100%;
   background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
 }
 .App {
   text-align: center;
 }
 
 .footer {
-  display: block;
+  position: fixed;
   color: white;
-  border: 2px solid black;
-  position: fixed;
   width: 100%;
-  bottom: 0px;
   background-color: black;
-  font-family: monospace;
+  bottom: 0;
   font-size: 15px;
-  position: fixed;
+  height: 4.3rem;
 }
 
 .footer a{

@@ -22,7 +22,7 @@ const File = (props) => {
         backgroundColor: 'white', 
         fontFamily: "monospace",
         fontSize: '15px',
-        margin:"1em 1em 3em 1em",
+        margin:"2em 1em 3em 1em",
         width: "100%",
         height: "500px",
         boxShadow: '5px 10px',

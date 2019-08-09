@@ -20,11 +20,11 @@ function App() {
     },
     boxLeft: {
       float: 'left',
-      marginTop: '1em',
+      marginTop: '0em',
     },
     boxRight: {
       float: 'right',
-      marginTop: '0em',
+      marginTop: '-1em',
       marginLeft: '1em',
       marginRight: '2em'
     }
