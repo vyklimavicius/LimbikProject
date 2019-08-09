@@ -20,11 +20,13 @@ function App() {
     },
     boxLeft: {
       float: 'left',
-      marginTop: '3em'
+      marginTop: '1em',
     },
     boxRight: {
       float: 'right',
-      marginTop: '2em'
+      marginTop: '0em',
+      marginLeft: '1em',
+      marginRight: '2em'
     }
   }));
 
@@ -69,7 +71,7 @@ function App() {
     <div className="App">
       <img src={logo} alt="logo" style={{marginTop: '3em'}}></img>
       <br/>
-      <Box width="45%" className={classes.boxLeft}>
+      <Box width="48%" className={classes.boxLeft}>
       <img src={idNum} alt="Idnum"></img>
       <br/>
       <TextField
@@ -88,7 +90,7 @@ function App() {
       }) : <h1><span role="img" aria-label="boom">💥</span>No record matches the ID Number!!</h1>}
       </Box>
       <br/>
-      <Box width="45%" className={classes.boxRight}>
+      <Box width="48%" className={classes.boxRight}>
       <img src={idNum} alt="Idnum"></img>
       <br />
       <TextField

@@ -21,10 +21,12 @@ const File = (props) => {
     const [cssStyle, setCssStyle] = useState({ 
         backgroundColor: 'white', 
         fontFamily: "monospace",
-        margin:"2em 20em 3em 9em",
-        width: "70%",
-        height: "40%",
-        boxShadow: '5px 10px'
+        fontSize: '15px',
+        margin:"1em 1em 3em 1em",
+        width: "100%",
+        height: "500px",
+        boxShadow: '5px 10px',
+        overflowY: 'scroll'
     });
 
     // event handler
@@ -45,7 +47,7 @@ const File = (props) => {
     };
         
   return (
-      <Box border={1} style={cssStyle} onMouseEnter={toggleHoverUp} onMouseLeave={toggleHoverDown}>
+        <Box border={1} style={cssStyle} onMouseEnter={toggleHoverUp} onMouseLeave={toggleHoverDown}>
      <h2><span role="img" aria-label="file">🗃</span>File number:{props.file.id}</h2>
      <h3><span role="img" aria-label="text">📋</span>Text:{props.file.text}</h3>
      <h4><span role="img" aria-label="eyes">👀</span>Impressions:{props.file.impressions}</h4>
