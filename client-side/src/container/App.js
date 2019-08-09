@@ -3,10 +3,10 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import File from '../presentational/file';
 import logo from '../images/logo.png';
-import box from '../images/boxingGloves.jpg';
 import idNum from '../images/idNumber.png';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
 
 function App() {
 
@@ -16,7 +16,15 @@ function App() {
       marginLeft: theme.spacing(1),
       marginRight: theme.spacing(1),
       backgroundColor: 'white',
-      borderColor: 'black'
+      borderColor: 'black',
+    },
+    boxLeft: {
+      float: 'left',
+      marginTop: '3em'
+    },
+    boxRight: {
+      float: 'right',
+      marginTop: '2em'
     }
   }));
 
@@ -59,9 +67,9 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} alt="logo"></img>
+      <img src={logo} alt="logo" style={{marginTop: '3em'}}></img>
       <br/>
-      {/* <label htmlFor="id">Search by ID number</label> */}
+      <Box width="45%" className={classes.boxLeft}>
       <img src={idNum} alt="Idnum"></img>
       <br/>
       <TextField
@@ -78,11 +86,9 @@ function App() {
       {filterFiles.length > 0 ? filterFiles.map( file => {
         return <File key={file.id} file={file}></File>
       }) : <h1><span role="img" aria-label="boom">💥</span>No record matches the ID Number!!</h1>}
+      </Box>
       <br/>
-      <img src={box} alt="box" style={{width: '5em'}}></img>
-      <br/>
-      <br/>
-      <br/>
+      <Box width="45%" className={classes.boxRight}>
       <img src={idNum} alt="Idnum"></img>
       <br />
       <TextField
@@ -96,10 +102,15 @@ function App() {
         margin="normal"
         variant="outlined"
       />
-      {/* <input type="number" onChange={handleChangeSecond}></input> */}
       {filterFilesSecond.length > 0 ? filterFilesSecond.map(file => {
         return <File key={file.id} file={file}></File>
       }) : <h1><span role="img" aria-label="boom">💥</span>No record matches the ID Number!!</h1>}
+      </Box>
+      <footer className="footer">
+        <p>Vytautas Klimavicius<span role="img" aria-label="copyright">©</span></p>
+        <p>Contact information: <a href="mailto:vyklimavicius@gmail.com">
+          vyklimavicius@gmail.com</a>.</p>
+      </footer>
     </div>
   );
 }

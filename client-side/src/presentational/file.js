@@ -21,8 +21,8 @@ const File = (props) => {
     const [cssStyle, setCssStyle] = useState({ 
         backgroundColor: 'white', 
         fontFamily: "monospace",
-        margin:"auto",
-        width: "50%",
+        margin:"2em 20em 3em 9em",
+        width: "70%",
         height: "40%",
         boxShadow: '5px 10px'
     });
