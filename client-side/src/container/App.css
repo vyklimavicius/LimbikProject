@@ -15,11 +15,7 @@ body {
   width: 100%;
   background-color: black;
   bottom: 0;
-  font-size: 15px;
-  height: 4.3rem;
-}
-
-.footer a{
-  color: blueviolet;
+  font-size: 13px;
+  height: 2rem;
 }
 

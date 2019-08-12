@@ -110,8 +110,6 @@ function App() {
       </Box>
       <footer className="footer">
         <p>Vytautas Klimavicius<span role="img" aria-label="copyright">©</span></p>
-        <p>Contact information: <a href="mailto:vyklimavicius@gmail.com">
-          vyklimavicius@gmail.com</a>.</p>
       </footer>
     </div>
   );

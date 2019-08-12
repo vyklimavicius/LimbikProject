@@ -24,7 +24,7 @@ const File = (props) => {
         fontSize: '15px',
         margin:"2em 1em 3em 1em",
         width: "100%",
-        height: "500px",
+        height: "400px",
         boxShadow: '5px 10px',
         overflowY: 'scroll'
     });
